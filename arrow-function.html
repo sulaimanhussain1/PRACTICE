@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTION</title>
+</head>
+<body>
+    <script>
+
+        // Three types to declare a function .
+
+        // Function Expression
+        var myfun = function disp(name) {
+            return name;
+        };
+        document.write(myfun(456));
+        document.write("<br>");
+
+        // Anonymous Function
+        var myfun1 = function (add) {
+            return add;
+        };
+        document.write(myfun1(563));
+        document.write("<br>");
+
+        
+        // Arrow function 
+          var myfun2 = c => {return c; };
+          document.write(myfun2(100));
+          document.write("<br>");
+
+
+        // Arrow function 
+        var myfun3 = c => c;   // also define this method 
+        document.write(myfun3(50 ));
+        document.write("<br>");
+        document.write("this is the example to declared the function.") 
+
+        /*
+                var myfun3 = c => c;                  it work
+                var myfun3 = c => {c};                it won't work
+                var myfun3 = c => {return c; };       it work   
+        */
+
+    </script>
+</body>
+</html>

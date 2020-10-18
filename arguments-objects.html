@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARGUMENTS OBJECTS.</title>
+    <script>
+        function dis() {
+            document.write (arguments.length + "<br>");
+        }
+            dis ("GEEKY" , "SHOWS" , "WORLD")
+
+        function one(subject , lan) {
+            arguments[1] = "3rd year<br>"
+            document.write (arguments[0] + "<br>");
+            document.write(arguments[1]);
+            
+        }
+        one("english <br> urdu " , "2nd year<br><br> " );
+
+        // too many arguments 
+
+        function add (a,b) {
+            document.write("A:"+a+"<br>"+"B:"+b + "<br>");
+            document.write("C:" + arguments[2] + "<br>"+"D:" + arguments[3]);
+        }
+        add(50,50,50,70);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

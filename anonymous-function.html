@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function</title>
+</head>
+<body>
+    <script>
+        // store anonymous function in variable
+        var a = function() {
+            document.write("SULAIMAN HUSSAIN<br>");
+        }
+        a();
+
+        // passing anonymous function as a argument 
+
+        function disp(name) {
+            return name;
+        }
+        document.write(disp( function() {
+            return "JHANGEERHUSSAIN<br>";
+        }));
+
+        //returning anonymous function
+        
+        function num(a) {
+            return function(b) {
+                return a+b;
+            };
+        }
+        var ab = (num(67));
+        document.write(ab(23));
+        
+    </script>
+</body>
+</html>

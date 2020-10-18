@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variable </title>
+</head>
+<body>
+    <script>
+        // global variable accessible anywhere .
+
+        var i = "This is Global Variable." //global variable 
+        function show(params) {
+            document.write(i+"<br>"); // inside the function
+        }
+        show();
+        
+        document.write(i+"<br>");     // outside the function
+
+        function disp(params) {
+            document.write(i+"<br>");   // inside the function  
+            }  
+        disp();    
+
+        if (true) {
+            document.write(i+"<br>");   // inside the block 
+        }
+
+
+        /* local variable only accessible inside the funcion. 
+        if you dont write "var" inside the function
+        .so its make the global variable.
+
+        for e.g:- var j = "i am local variable" ..it is right
+          OR       j = "i am local variable" .. it is wrong*/
+
+         function num(params) {
+             var j = "This is local variable"
+             document.write(j +"<br>");
+         }
+         num ();
+         document.write (j);
+
+
+
+
+        
+    </script>
+</body>
+</html>
